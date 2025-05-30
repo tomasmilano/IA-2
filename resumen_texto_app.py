@@ -7,7 +7,8 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-HUGGINGFACE_API_TOKEN = None
+
+HUGGINGFACE_API_TOKEN = os.getenv("HUGGINGFACE_API_TOKEN")
 
 
 API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-cnn"
